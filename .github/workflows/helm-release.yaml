@@ -1,11 +1,10 @@
-name: Release
+name: Release helm chart
 
 on:
   push:
     tags:
       - 'v*.*.*'
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   helm:
